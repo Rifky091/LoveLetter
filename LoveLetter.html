@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter & Birthday Wishes</title>
+    <style>
+       body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff5e6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            flex-direction: column;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #e57373;
+            text-align: center;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .signature {
+            text-align: right;
+            font-style: italic;
+            margin-top: 40px;
+        }
+        .heart {
+            color: #e57373;
+            text-align: center;
+            font-size: 48px;
+        }
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #e57373;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+        .button .icon {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday, Sayaaangg!</h1>
+        <div class="heart">❤️</div>
+        <p>Dear Nurfina,</p>
+        <p>On this special day, I want you to know how much i love you and how much you mean to me. Thank you for being born into this world and thank you for choosing me as your partner.</p>
+        <p>You are not just my partner, but also my best friend, and my soulmate. I am grateful for every laugh we've shared, every problem we've faced, and every dream we are building together.</p>
+        <p>Today, is your birthday, and I wish for all of your dreams come true and for your heart to be filled with endless joy and happiness ❤️❤️❤️❤️.</p>
+        <p>Happy Birthday, Sayaanggkuuuu! AND LETS GO TO FILL YOUR WISHLIST HOLIDAY FROM NOW ON❤️❤️❤️❤️</p>
+        <div class="signature">
+            With all my love,<br>
+            R❤️
+        </div>
+    </div>
+    <button class="button" onclick="playMusic()">
+        <span class="icon">🎵</span> Play Music
+    </button>
+    <audio id="background-music" src="Music.mp3"></audio>
+    <script>
+        function openLetter() {
+            const letter = document.querySelector('.letter');
+            letter.style.transform = 'translateY(0)';
+            letter.style.maxHeight = '1000px'; /* Set to a large enough value to show all content */
+        }
+
+        function playMusic() {
+            const audio = document.getElementById('background-music');
+            audio.play();
+        }
+    </script>
+</body>
+</html>
