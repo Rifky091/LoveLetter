@@ -104,9 +104,9 @@
     var { value: nama } = await swals.fire({
            title: 'Masukin Nama Lengkap Kamu', input: 'text',
        });
-       if(nama == "Nurfina Aini" || "Fina" || "Nurfina aini"){
+       if (nama === "Nurfina Aini" || nama === "Fina" || nama === "Nurfina aini" || nama === "nurfina aini" || nama === "fina"){
          window.nama = nama;
-         vketikhalo="Halooo " + nama + " Sayaaang";
+         vketikhalo="Halooo " + " Sayaaang ❤️❤️ ";
          mulainama();
          } else {
            await swals.fire('Ups!', 'Ini bukan buat kamu :p');inipesan();
